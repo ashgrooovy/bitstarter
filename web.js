@@ -6,13 +6,12 @@ app.get('/', function(request, response) {
     var fs = require('fs');
     fs.readFile('index.html','utf8',function(err,data){
 	if(err){
-	    return console.log("ASHWIN->"+err);
+	    return console.log(err);
 	}
 	console.log(data);
         response.send(data);
     });
-    //response.send("hello");
-    
+        
 });
 
 var port = process.env.PORT || 5000;
