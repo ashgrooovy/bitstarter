@@ -6,7 +6,7 @@ app.get('/', function(request, response) {
     var fs = require('fs');
     fs.readFile('index.html','utf8',function(err,data){
 	if(err){
-	    return console.log(err);
+	    return console.log("ASHWIN->"+err);
 	}
 	console.log(data);
     });
