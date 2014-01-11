@@ -9,10 +9,10 @@ app.get('/', function(request, response) {
 	    return console.log("ASHWIN->"+err);
 	}
 	console.log(data);
+        response.send(data);
     });
  }
     
-  response.send(fileContents);
 });
 
 var port = process.env.PORT || 5000;
